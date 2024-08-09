@@ -26,7 +26,7 @@
       <a class="btn btn-primary" href="signin.html"
         >Sign In
         <svg class="bi" width="32" height="32" fill="currentColor">
-          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person" /></svg
+          <!-- <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person" /></svg -->
       ></a>
     </header>
     <main>
@@ -41,7 +41,8 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <i class="bi bi-plus-circle-fill"> </i> 🆕Create new
+            <!-- <i class="bi bi-plus-circle-fill"> </i> 🆕Create new -->
+            <span class="nav-icon">+</span> <span class="nav-text">Create new</span>
           </a>
 
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -51,20 +52,36 @@
             <li><a class="dropdown-item" href="#">New User</a></li>
           </ul>
 
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">🛒Requests</a>
             <a class="nav-link active" aria-current="page" href="#">📦Products</a>
             <a class="nav-link active" aria-current="page" href="#">🏢Vendors</a>
 
             <a class="nav-link active" aria-current="page" href="#">📋Lists</a>
           </li>
-        </ul>
+        </ul> -->
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+            <span class="nav-icon"></span> <span class="nav-text">Requests</span>
+          </a>
+          <a class="nav-link active" aria-current="page" href="#">
+            <span class="nav-icon"></span> <span class="nav-text">Products</span>
+          </a>
+          <a class="nav-link active" aria-current="page" href="#">
+            <span class="nav-icon"></span> <span class="nav-text">Vendors</span>
+          </a>
+          <a class="nav-link active" aria-current="page" href="#">
+            <span class="nav-icon"></span> <span class="nav-text">Lists</span>
+          </a>
+        </li>
+
       </nav>
 
       <section class="mt-4 container-fluid mx-5">
         <div class="border-bottom d-flex justify-content-between p-3 mb-4">
           <h3>Products</h3>
-          <a class="btn btn-primary" href="product-create.html"><i class="bi bi-plus"></i> Create Product</a>
+          <!-- <a class="btn btn-primary" href="product-create.html"><i class="bi bi-plus"></i> Create Product</a> -->
         </div>
 
         <div class="container-fluid list bg-body-secondary">

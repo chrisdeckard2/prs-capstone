@@ -6,6 +6,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Include Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
   </head>
 
   <body>
@@ -20,14 +22,13 @@
           ></path>
         </svg>
 
-        <span class=".logo-text">Purchase Request System</span>
+        <span class="logo-text">Purchase Request System</span>
       </div>
 
-      <a class="btn btn-primary" href="signin.html"
-        >Sign In
-        <svg class="bi" width="32" height="32" fill="currentColor">
-          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person" /></svg
-      ></a>
+      <a class="btn btn-primary d-flex align-items-center" href="signin.html">
+        Sign In
+        <!-- <i class="bi bi-person ms-2"></i> Using Bootstrap Icons class for the icon -->
+      </a>
     </header>
     <main>
       <nav>
@@ -41,7 +42,7 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <i class="bi bi-plus-circle-fill"> </i> 🆕Create new
+            <i class="bi bi-plus"></i>Create new
           </a>
 
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -52,11 +53,10 @@
           </ul>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">🛒Requests</a>
-            <a class="nav-link active" aria-current="page" href="#">📦Products</a>
-            <a class="nav-link active" aria-current="page" href="#">🏢Vendors</a>
-
-            <a class="nav-link active" aria-current="page" href="#">📋Lists</a>
+            <a class="nav-link active" aria-current="page" href="#">Requests</a>
+            <a class="nav-link active" aria-current="page" href="#">Products</a>
+            <a class="nav-link active" aria-current="page" href="#">Vendors</a>
+            <a class="nav-link active" aria-current="page" href="#">Lists</a>
           </li>
         </ul>
       </nav>
