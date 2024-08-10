@@ -3,11 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Create Vendor</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Include Bootstrap Icons CSS -->
+    
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <style>
+      .form-control:focus {
+        box-shadow: none;
+        outline: none;
+      }
+      
+
+    </style>
+
+
+
   </head>
 
   <body>
@@ -27,7 +38,7 @@
 
       <a class="btn btn-primary d-flex align-items-center" href="signin.html">
         Sign In
-        <!-- <i class="bi bi-person ms-2"></i> Using Bootstrap Icons class for the icon -->
+        
       </a>
     </header>
     <main>
@@ -62,13 +73,86 @@
         </ul>
       </nav>
       <section class="container fluid mx-5 my-2 py-4">
-        <h2>Create a Vendor</h2>
+        <h2>New Vendor</h2>
 
         <hr />
 
-        <p>This page will allow you to create a Vendor.</p>
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-3">
+            <label for="validationCustom01" class="form-label">Vendor Code</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom01"
+              placeholder="Enter short vendor code"
+              required
+            />
+            <div class="invalid-feedback">Code is required.</div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">Vendor Name</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Enter vendor name" required />
+            <div class="invalid-feedback">Name is required.</div>
+          </div>
+          <div class="col-md-9">
+            <label for="validationCustom06" class="form-label">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom06"
+              placeholder="Enter vendor's address"
+              required
+            />
+            <div class="invalid-feedback">Address is required.</div>
+          </div>
+          <div class="col-md-5">
+            <label for="validationCustom03" class="form-label">City</label>
+            <input
+              type="text"
+              class="form-control"
+              id="validationCustom03"
+              placeholder="Enter city"
+              required
+            />
+            <!-- <div class="invalid-feedback">City is required.</div> -->
+          </div>
+          <div class="col-md-2">
+            <label for="validationCustom04" class="form-label">State</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Select state...</option>
+              <option>...</option>
+            </select>
+            <div class="invalid-feedback">Please select a valid state.</div>
+          </div>
+          <div class="col-md-2">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" placeholder="Enter zip code" required />
+            <div class="invalid-feedback">Please provide a valid zip.</div>
+          </div>
+
+          <div class="col-md-5">
+            <label for="validationCustom06" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="validationCustom06" placeholder="Enter phone number" required style="width: 300px;"/>
+            <div class="invalid-feedback">Please provide a valid phone number.</div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustom07" class="form-label">Email</label>
+            <input type="email" class="form-control" id="validationCustom07" placeholder="Enter email address" required />
+            <div class="invalid-feedback">Please provide a valid email address.</div>
+          </div>
+
+          <div class="col-12 offset-7 mt-3">
+            <button class="btn btn-outline-primary" type="button">Cancel</button>
+            <div class="d-inline">
+             
+              <button class="btn btn-primary  align-items-center" type="submit">Save vendor</button>
+            </div>
+          </div>
+        </form>
       </section>
     </main>
+    
+    
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
