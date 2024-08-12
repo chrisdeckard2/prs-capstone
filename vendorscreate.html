@@ -14,7 +14,7 @@
         outline: none;
       }
       .mb-5 {
-        margin-bottom: 1rem; /* Adjust the margin value as needed */
+        margin-bottom: 1rem; 
       }
 
     </style>
@@ -45,7 +45,7 @@
     </header>
     <main>
       <nav>
-        <ul class="nav flex-column pt-4">
+        <ul class="nav flex-column p-4">
           <div class="dropdown"></div>
           <a
             class="btn createnewbtn"
@@ -79,12 +79,13 @@
 
         <hr />
 
-        <form class="row g-3 needs-validation" novalidate>
+        <form class="row g-3 needs-validation is-invalid" novalidate>
           <div class="col-md-3">
+          
             <label for="validationCustom01" class="form-label">Vendor Code</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control is-invalid"
               id="validationCustom01"
               placeholder="Enter short vendor code"
               required
@@ -100,7 +101,7 @@
             <label for="validationCustom06" class="form-label">Address</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control is-invalid"
               id="validationCustom06"
               placeholder="Enter vendor's address"
               required
@@ -116,8 +117,9 @@
               placeholder="Enter city"
               required
             />
-            <!-- <div class="invalid-feedback">City is required.</div> -->
+            
           </div>
+          
           <div class="col-md-2">
             <label for="validationCustom04" class="form-label">State</label>
             <select class="form-select" id="validationCustom04" required>
@@ -140,7 +142,7 @@
           <div class="col-md-4">
             <label for="validationCustom07" class="form-label">Email</label>
             <input type="email" class="form-control" id="validationCustom07" placeholder="Enter email address" required />
-            <div class="invalid-feedback">Please provide a valid email address.</div>
+            <div class="form-control is-invalid">Please provide a valid email address.</div>
           </div>
 
           <div class="col-md-4 offset-md-7 mt-3">
@@ -154,5 +156,6 @@
     
     
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
   </body>
 </html>
